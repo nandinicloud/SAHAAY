@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Psychology Info</title>
+  <style>
+    body {
+      background-color: #447EAE; /* Sky blue background */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      flex-direction: column;
+    }
+
+    .cloud {
+      background: #2C5F91; /* Darker blue cloud */
+      color: white;
+      padding: 40px;
+      border-radius: 50%;
+      width: 400px;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .cloud::before,
+    .cloud::after {
+      content: '';
+      position: absolute;
+      background: #2C5F91;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+    }
+
+    .cloud::before {
+      top: -60px;
+      left: 50px;
+    }
+
+    .cloud::after {
+      top: -40px;
+      right: 50px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      font-weight: bold; /* Make text bold */
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: white;
+      background-color: #1B3B5F; /* Dark blue buttons */
+      transition: background-color 0.3s;
+    }
+
+    .buttons button:hover {
+      background-color: #14508E;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="cloud">
+    <p>According to the World Health Organization (WHO), over 14% of children and adolescents globally suffer from mental health conditions, yet most cases remain undetected due to lack of awareness and monitoring.</p>
+  </div>
+
+  <div class="buttons">
+    <button>Skip</button>
+    <button>Next</button>
+  </div>
+</body>
+</html>
